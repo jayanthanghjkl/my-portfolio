@@ -47,25 +47,25 @@
       color: #444;
       margin-bottom: 1rem;
     }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-    }
-
     .card {
       background: #fff;
       border-radius: 8px;
       padding: 1rem;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+ #gallery .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
 
-    img, video {
-      width: 100%;
-      border-radius: 8px;
-    }
-
+#gallery img, 
+#gallery video {
+  width: 100%;
+  height: 180px;    
+  object-fit: cover; 
+  border-radius: 8px;
+}
     button {
       margin-top: 1rem;
       padding: 0.7rem 1.2rem;
@@ -134,35 +134,31 @@
 
   
   <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="https://raw.githubusercontent.com/jayanthanghjkl/my-portfolio/refs/heads/main/Screenshot%202025-09-06%20135707.png" alt="Dummy Image">
-      </div>
-       <div class="grid">
-      <div class="card">
-        <img src="https://raw.githubusercontent.com/jayanthanghjkl/my-portfolio/refs/heads/main/Screenshot%202025-09-06%20135800.png" alt="Dummy Image">
-      </div>
-       <div class="grid">
-      <div class="card">
-        <img src="https://raw.githubusercontent.com/jayanthanghjkl/my-portfolio/refs/heads/main/Screenshot%202025-09-06%20135821.png" alt="Dummy Image">
-      </div>
-       <div class="grid">
-      <div class="card">
-        <img src="https://raw.githubusercontent.com/jayanthanghjkl/my-portfolio/refs/heads/main/Screenshot%202025-09-06%20135833.png" alt="Dummy Image">
-      </div>
-       <div class="grid">
-      <div class="card">
-        <img src="https://raw.githubusercontent.com/jayanthanghjkl/my-portfolio/refs/heads/main/Screenshot%202025-09-06%20135634.png" alt="Dummy Image">
-      </div>
-      <div class="card">
-        <video width="400" control autoplay loop muted>
-          <source src="https://github.com/jayanthanghjkl/my-portfolio/raw/refs/heads/main/screen-20250906-164935.mp4" type="video/mp4">
-          Your browser does not support video.
-        </video>
-      </div>
+  <h2>Gallery</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://raw.githubusercontent.com/jayanthanghjkl/my-portfolio/refs/heads/main/Screenshot%202025-09-06%20135707.png" alt="Dummy Image">
     </div>
-  </section>
+    <div class="card">
+      <img src="https://raw.githubusercontent.com/jayanthanghjkl/my-portfolio/refs/heads/main/Screenshot%202025-09-06%20135800.png" alt="Dummy Image">
+    </div>
+    <div class="card">
+      <img src="https://raw.githubusercontent.com/jayanthanghjkl/my-portfolio/refs/heads/main/Screenshot%202025-09-06%20135821.png" alt="Dummy Image">
+    </div>
+    <div class="card">
+      <img src="https://raw.githubusercontent.com/jayanthanghjkl/my-portfolio/refs/heads/main/Screenshot%202025-09-06%20135833.png" alt="Dummy Image">
+    </div>
+    <div class="card">
+      <img src="https://raw.githubusercontent.com/jayanthanghjkl/my-portfolio/refs/heads/main/Screenshot%202025-09-06%20135634.png" alt="Dummy Image">
+    </div>
+    <div class="card">
+      <video width="100%" controls autoplay loop muted>
+        <source src="https://github.com/jayanthanghjkl/my-portfolio/raw/refs/heads/main/screen-20250906-164935.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+    </div>
+  </div>
+</section>
 
   
   <section id="contact">
