@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootcamp Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #444;
+      margin-bottom: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    img, video {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    button {
+      margin-top: 1rem;
+      padding: 0.7rem 1.2rem;
+      font-size: 1rem;
+      background: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    footer {
+      text-align: center;
+      background: #222;
+      color: #fff;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>My Bootcamp Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! 👋 I am learning web development in this Bootcamp. 
+    This portfolio is my Week 1 practice project using HTML, CSS, Git, and GitHub.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card">HTML Basics</div>
+      <div class="card">CSS Styling</div>
+      <div class="card">Git & GitHub</div>
+      <div class="card">JavaScript (Beginner)</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">Portfolio Website (this one ✅)</div>
+      <div class="card">Git Practice Repository</div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250.png?text=Dummy+Image" alt="Dummy Image">
+      </div>
+      <div class="card">
+        <video controls>
+          <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+          Your browser does not support video.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="grid">
+      <div class="card">📧 Email: example@mail.com</div>
+      <div class="card">💻 GitHub: github.com/username</div>
+      <div class="card">🔗 LinkedIn: linkedin.com/in/username</div>
+    </div>
+    <!-- JavaScript Practice Button -->
+    <button onclick="sayHello()">Click Me</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 My Bootcamp Portfolio</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function sayHello() {
+      alert("Hello! 🚀 Thanks for visiting my Bootcamp Portfolio!");
+    }
+  </script>
+</body>
+</html>
